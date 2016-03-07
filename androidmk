@@ -1,0 +1,16 @@
+sourceSets {
+        main {
+            manifest.srcFile 'Dialer/AndroidManifest.xml'
+            aidl.srcDirs = ['qualcomm-ext/Dialer/src', 'tinno-ext/src']
+            java.srcDirs = ['Dialer/src','ContactsCommon/src','InCallUI/src','PhoneCommon/src',
+                            'mtk-ext/ContactsCommon/src','mtk-ext/ContactsCommon/ext/src',
+                            'mtk-ext/Dialer/src','mtk-ext/Dialer/ext/src','mtk-ext/framework/src',
+                            'mtk-ext/InCallUI/src','mtk-ext/InCallUI/ext/src','qualcomm-ext/Dialer/src',
+                            'qualcomm-ext/InCallUI/src', 'tinno-ext/src', 'ape-wrapper/src']
+
+            res.srcDirs = ['Dialer/res','tinno-ext/res','tinno-ext/res_sort','InCallUI/res','ContactsCommon/res',
+                           'PhoneCommon/res','mtk-ext/Dialer/res','mtk-ext/InCallUI/res',
+                           'mtk-ext/ContactsCommon/res','mtk-ext/framework/res',
+                           'qualcomm-ext/InCallUI/res']
+        }
+    }
